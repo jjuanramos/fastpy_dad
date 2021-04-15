@@ -22,6 +22,5 @@ async def pong(settings: Settings = Depends(get_settings)) -> dict:
     return {
         "ping": "pong!",
         "environment": settings.environment,
-        "testing": settings.testing,
-        "database_url": settings.database_url
+        "testing": settings.testing
     }
